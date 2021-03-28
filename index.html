@@ -283,9 +283,12 @@
             <div class="form-side">
                 <p class="form-call">Подпишитесь на рассылку
                 </p>
-                <form action="#">
+                <form action="#" class="subsc-form">
                     <input type="email" name="mail-for-subscribe" placeholder="E-mail" class="subsc-input">
-                    <button type="submit" class="subsc-btn">Подписаться</button>
+                    <button type="submit" class="subsc-btn">
+                        Подписаться
+                        <svg class="send-icon" width="24" height="24"><use href="./images/sprite.svg#icon-send"></use></svg>
+                    </button>
                 </form>
             </div>
         </div>
@@ -322,9 +325,13 @@
                     Комментарий
                     <textarea name="user-message" class="modal-textarea" placeholder="Введите текст"></textarea>
                 </label>
-                <input id="check-term" type="checkbox" name="user-agreement" class="modal-check">
-                <label for="check-term" class="modal-check-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="link term-link">Условия договора</a></label>
-                <button type="submit" class="modal-form-btn">Отправить</button>
+                <div class="term-wrap">
+                    <input id="check-term" type="checkbox" name="user-agreement" class="modal-check">
+                    <label for="check-term" class="modal-check-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="link term-link">Условия договора</a></label>
+                </div>
+                <button type="submit" class="modal-form-btn">
+                    Отправить
+                </button>
             </form>
         </div>
     </div>
