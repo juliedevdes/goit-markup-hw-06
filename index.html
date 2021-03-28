@@ -277,8 +277,15 @@
                         <a href="" class="socials-icon-item-footer"><svg class="socials-icon" width="20" height="20"><use href="./images/sprite.svg#icon-linkedin "></use></svg>
                         </a>
                     </li>
-
                 </ul>
+            </div>
+            <div class="form-side">
+                <p class="form-call">Подпишитесь на рассылку
+                </p>
+                <form action="#">
+                    <input type="email" name="mail-for-subscribe" placeholder="E-mail" class="subsc-input">
+                    <button type="submit" class="subsc-btn">Подписаться</button>
+                </form>
             </div>
         </div>
     </footer>
@@ -287,6 +294,26 @@
         <div class="hero-modal">
             <button class="modal-close" type="button" data-modal-close><svg class="close-icon" width="16" height="16" ><use href="./images/sprite.svg#icon-close"></use></svg>
             </button>
+            <p class="modal-call">Оставьте свои данные, мы вам перезвоним</p>
+            <form action="#" class="modal-form">
+                <label class="modal-input-label">
+                    Имя
+                <input type="text" class="modal-input" name="user-name">
+                </label>
+                <label class="modal-input-label">
+                    Телефон
+                <input type="tel" class="modal-input" name="user-phone">
+                </label>
+                <label class="modal-input-label">
+                    Почта
+                <input type="email" class="modal-input" name="user-mail">
+                </label>
+                <label class="modal-textarea-label">
+                    Комментарий
+                    <textarea name="user-message" class="modal-textarea" placeholder="Введите текст"></textarea>
+                </label>
+                <input type="checkbox" name="user-agreement" class="modal-check">
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
