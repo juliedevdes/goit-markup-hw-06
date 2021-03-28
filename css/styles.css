@@ -804,6 +804,12 @@
                 top: 8px;
                 right: 8px;
                 cursor: pointer;
+                transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            .modal-close:focus,
+            .modal-close:hover {
+                fill: var(--acent-color);
             }
             
             .close-icon {
@@ -864,8 +870,7 @@
                 padding-right: 55px;
                 padding-left: 55px;
                 border: 0;
-                width: 200px;
-                margin: 0 auto;
+                align-self: center;
                 font-size: 16px;
                 line-height: 1.87;
                 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -948,7 +953,6 @@
                 letter-spacing: 0.03em;
                 text-decoration-line: underline;
                 color: var(--acent-color);
-                margin-left: 5px;
             }
             
             .modal-check-label {
